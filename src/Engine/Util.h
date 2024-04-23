@@ -6,7 +6,6 @@
 
 float MoveToward(float from, float to, float delta);
 int sign(float val);
-float randf(float max);
-void DrawTextCentered(const char* text, float x, float y, float size, Color color);
+void DrawTextCentered(const char* text, int x, int y, int size, Color color);
 
 #endif //RAYGINE_UTIL_H

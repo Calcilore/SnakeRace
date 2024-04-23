@@ -16,6 +16,7 @@ void Draw(float delta);
 
 int main() {
     InitWindow(WIDTH, HEIGHT, "car game");
+    SetWindowMinSize(0, 0);
     SetTargetFPS(384); // Set max FPS
     SetExitKey(KEY_NULL);
 
@@ -26,6 +27,7 @@ int main() {
     camera.offset = (Vector2){HALF_WIDTH, HALF_HEIGHT};
     camera.rotation = 0.0f;
     camera.zoom = 1.0f;
+    camera.ForceUpdate();
 
     world = World();
 

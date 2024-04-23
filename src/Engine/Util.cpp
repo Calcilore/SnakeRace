@@ -14,11 +14,7 @@ int sign(float val) {
     return (float(0) < val) - (val < float(0));
 }
 
-float randf(float max) {
-    return float(rand()) / float((RAND_MAX)) * max;
-}
-
-void DrawTextCentered(const char *text, float x, float y, float size, Color color) {
+void DrawTextCentered(const char *text, int x, int y, int size, Color color) {
     Vector2 siz = MeasureTextEx(GetFontDefault(), text, size, 1);
-    DrawTextEx(GetFontDefault(), text, {x - siz.x / 2, y - siz.y / 2}, size, 1, color);
+    DrawText(text, x - (int)siz.x / 2, y - (int)siz.y / 2, size, color);
 }

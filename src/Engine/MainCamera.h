@@ -7,6 +7,8 @@
 class MainCamera : public Camera2D {
     public:
         void Update();
+
+    void ForceUpdate();
 };
 
 
